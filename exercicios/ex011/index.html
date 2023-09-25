@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando formatos de fotos</title>
+</head>
+<body>
+    <h1>Imagem Dinçâmica</h1>
+    <p>Tente abrir esse modelo em varios dispositivos diferentes e veja a dinamicidade dela em todos os dispositivos que conseguir!</p>
+    <picture>
+        <source media="(min-width: 1050px)" srcset="fotos/foto-g.png" type="image/png">
+        <source media="(min-width: 750px)" srcset="fotos/foto-m.png" type="image/png">
+        <img src="fotos/foto-p.png" alt="Imagem Flexével">
+    </picture>
+    <h1>Reproduzindo Áudios </h1>
+    <p>Aprendendo a reproduzir áudios em HTML5</p>
+    <audio src="midia/You're No Help - Silent Partner.mp3" controls></audio> <!-- MP3 WAV OGG --> 
+    <!-- É necessario usar CONTROL para que você possa reproduzir o áudio, se o control vier acompanhado do AUTOPLAY o audio irá rodar automaticamente assim que o site for carregado. -->
+    <!-- Entre todo esses comando você tambem pode usar o PRELOAD que pode não carregar nada- NONE pode carregar so alguns arquivos-METADATA(INDICADO) ou pode careregar todo o audio mas so pode abrir o site quando tudo estiver carregado AUTO, alem ddesse comando támem exite o LOOP -->
+    <p>Outra música legal</p>
+    <p>
+    <audio controls preload="metadata">
+        <source src="midia/Les-ly - Mini Vandals.mp3" type="audio/mpeg">
+        <source src="midia/Les-ly - Mini Vandals.wav" type="audio/wav"> <!-- Evitar esse formato -->
+        <source src="midia/Les-ly - Mini Vandals.mp3" type="audio/ogg">
+    </p>
+    <p>Infelzmente seu navegador não consegue rodar esse tipo de áudio ;-;</p>
+    <a href="midia/Les-ly - Mini Vandals.mp3" download="Les-ly - Mini Vandals.mp3" type="midia/mpeg" target="_blank">Clique aqui para baixar seu arquivo MP3</a> <!-- Ao que vi na internet pesquisando sobre isso, o arquivo download só é desponibilizado quando o site está em um servidor. -->
+
+    </audio>
+</body>
+</html>

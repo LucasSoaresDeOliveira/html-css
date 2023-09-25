@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Eis aqui um link</h1>
+    <p>Clique aqui: <a href="https://www.youtube.com/watch?v=hvL1339luv0" target="_blank" rel="external">Link</a></p>
+    <!-- Blank irá abrir uma janela externa para abrir sua URL -->
+    <p>Ou aqui: <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="external">Link</a></p>
+    <!-- Self ira abrir sua URL na mesma pagina e fechará a anterior -->
+
+    <!-- ‣ _top vai desfazer todos os frames e abrir o destino no navegador completo 
+         ‣ _parent similar ao uso do _top em uma referência à janela mãe 
+         ‣ nome-do-frame caso esteja usando frames, indicar o nome da janela a abrir. -->
+         <p>Você tambem pode ir para a segunda página clicando aqui: <a href="pag002.html" target="_self" rel="_next">Link</a></p>
+         <h1>Links pra Dawnload</h1>
+         <p>
+            <ul type="disc">
+                <li><a href="Downloads/folha redação.pdf" download="folha redação.pdf" type="application/pdf">Pdf</a></li>
+                <li><a href="Downloads/folha redação.zip" download="folha redação.zip" type="application/zip">.ZIP</a></li>
+                <!-- Para ver todos os types acessar site (https://www.iana.org/assignments/media-types/media-types.xhtml).-->
+            </ul>
+         </p>
+</body>
+</html>
