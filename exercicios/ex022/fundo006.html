@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo fixo de tela</title>
+    <style>
+        body {
+            height: 100vw;
+            /*background-color: black;
+            background-image: url('imagens/wallpaper002.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;           background-attachment: fixed;*/
+            text-align: justify;
+
+            /* Shorthand -background
+                color > image > position > repeat > [size] > attachment
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            
+            /* Cuidado ao usar o [size] no shorthand pois de acordo com o W3C ele pode ser usado em delaração mas ainda não esta funcionadno e é necessario usar uma declaração independente do shorthand para que funcione corretamente */
+
+            background-size: cover;
+        }
+
+        main {
+            background-color: white;
+            max-width: 700px;
+            border: 2px solid blue;
+            border-radius: 12px;
+            margin: auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae dolore earum assumenda eum tempore accusamus excepturi sunt quam repellat, ducimus eligendi, sit modi dolorem doloribus nesciunt id ad facilis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit culpa ipsam tempora molestias cum animi omnis facilis ad, nihil tempore dignissimos placeat facere, vitae necessitatibus hic minima iusto praesentium numquam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit minus, quia dignissimos aperiam non dicta odio iure enim corrupti rem molestiae nisi velit voluptatibus, ab explicabo! Adipisci nostrum recusandae blanditiis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident cupiditate beatae, dolorum voluptatum unde laborum! Fugit obcaecati cupiditate, tempora animi, fuga reiciendis voluptatum, suscipit non eaque eligendi architecto sequi! Sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi odio aliquam tempora debitis natus magni accusamus nobis libero est recusandae, saepe possimus eum quia fugit ut esse nostrum repudiandae fugiat. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis modi aspernatur voluptates excepturi neque, aperiam vero mollitia officiis tempora quidem, possimus unde. Nisi quis quos a dicta mollitia dolorum officia.</p>
+    </main>
+</body>
+</html>
