@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            background-color: lightgray;
+            font-weight: bold;
+            font-size: 1.4em;
+            padding: 10px;
+            border-radius: 8px 8px 0px 0px ;
+        }
+
+        thead {
+            background-color: rgb(22, 22, 22);
+            color: white;
+        }
+
+        tbody > tr:nth-child(2n-1) {
+            background-color: rgb(226, 226, 226);
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .num {
+            text-align: right;
+        }
+
+        tfoot {
+            background-color: rgb(22, 22, 22);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- 
+        ANATOMIA PARA TABALAS GRANDES
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+     -->
+     <table>
+        <caption>Região Nordeste do País</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 120px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">52.811,047</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">56.469,778</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">27.848,140</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">564.733,177</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">21.915,081</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">98.148,323</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">148.920,472</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">331.937,450</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">251.577,738</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">148.920,472</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>1.554.361,206</strong></td>
+            </tr>
+        </tfoot>
+     </table>
+</body>
+</html>
