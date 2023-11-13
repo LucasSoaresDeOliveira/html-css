@@ -10,6 +10,10 @@ body, html {
     background-color: lightgray;
 }
 
+header {
+    background-color: gray;
+}
+
 header > h1 {
     text-align: center;
     padding: 10px;

@@ -6,8 +6,9 @@
     <title>Media Query</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
@@ -30,6 +31,14 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum atque cumque a nihil, quasi et ipsam recusandae nam beatae similique odio quam aperiam repudiandae accusantium minus sint quidem architecto! Perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat veniam nihil cum sed ab inventore ad tenetur at modi soluta esse ut magni, laboriosam expedita porro hic reprehenderit labore vitae? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga ab aspernatur temporibus, aut, nostrum totam sint dolor minus deserunt tenetur assumenda repellendus amet omnis numquam maxime! Necessitatibus recusandae eius cupiditate. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident aperiam eveniet reiciendis iste nulla consectetur nemo veniam veritatis nesciunt, corrupti quisquam iure rem quam dolore quis officia incidunt atque a? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga ab aspernatur temporibus, aut, nostrum totam sint dolor minus deserunt tenetur assumenda repellendus amet omnis numquam maxime! Necessitatibus recusandae eius cupiditate. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident aperiam eveniet reiciendis iste nulla consectetur nemo veniam veritatis nesciunt, corrupti quisquam iure rem quam dolore quis officia incidunt atque a? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga ab aspernatur temporibus, aut, nostrum totam sint dolor minus deserunt tenetur assumenda repellendus amet omnis numquam maxime! Necessitatibus recusandae eius cupiditate. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident aperiam eveniet reiciendis iste nulla consectetur nemo veniam veritatis nesciunt, corrupti quisquam iure rem quam dolore quis officia incidunt atque a?</p>
     </main>
     <script>
+        function mudouTamanho() {
+            if(window.innerWidth >= 768) {
+                itens.style.display = "block"
+            } else {
+                itens.style.display = "none"
+            }
+        }
+
         function clickMenu() {
             if(itens.style.display == "block") {
                 itens.style.display = "none"
